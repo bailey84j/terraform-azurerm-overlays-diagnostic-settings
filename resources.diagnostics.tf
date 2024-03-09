@@ -37,7 +37,7 @@ resource "azurerm_monitor_diagnostic_setting" "main" {
       category = metric.key
       enabled  = metric.value.enabled
     }
-  }
+  }  
 
   lifecycle {
     ignore_changes = [log_analytics_destination_type]
