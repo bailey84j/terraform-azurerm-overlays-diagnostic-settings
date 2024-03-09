@@ -1,6 +1,5 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-output "echo_text" {
-  value = module.echo.echo_text
-}
+# remove file if not needed
+data "azurerm_client_config" "current" {}

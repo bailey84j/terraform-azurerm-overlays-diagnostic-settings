@@ -21,11 +21,6 @@ variable "deploy_environment" {
   type        = string
 }
 
-variable "workload_name" {
-  description = "Name of the workload_name"
-  type        = string
-}
-
 variable "org_name" {
   description = "Name of the organization"
   type        = string
