@@ -26,6 +26,10 @@ variable "org_name" {
   type        = string
 }
 
+variable "workload_name" {
+  description = "Name of the workload name"
+  type        = string
+}
 #######################
 # RG Configuration   ##
 #######################
