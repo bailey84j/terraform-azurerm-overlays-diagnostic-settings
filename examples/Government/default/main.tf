@@ -10,7 +10,7 @@ module "mod_diagnostic_settings" {
   location           = var.location
   deploy_environment = var.deploy_environment
   environment        = var.environment
-  org_name           = var.org_name
+  org_name           = module.org_name.name
 
   resource_id           = azurerm_key_vault.diagnostic-settings-kv.id
   logs_destinations_ids = [azurerm_log_analytics_workspace.diagnostic-settings-log.id]

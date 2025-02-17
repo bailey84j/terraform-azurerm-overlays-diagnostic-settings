@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
- resource "azurerm_resource_group" "diagnostic-settings-network-rg" {
+resource "azurerm_resource_group" "diagnostic-settings-network-rg" {
   name     = "diagnostic-settings-network-rg"
   location = var.location
   tags = {
@@ -70,5 +70,5 @@ resource "azurerm_key_vault" "diagnostic-settings-kv" {
   tenant_id           = data.azurerm_client_config.current.tenant_id
   tags = {
     environment = "test"
-  }  
+  }
 }

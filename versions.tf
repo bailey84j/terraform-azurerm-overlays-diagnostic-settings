@@ -6,8 +6,8 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 3.22"
-    }   
+      version = "~> 4.8"
+    }
     azurenoopsutils = {
       source  = "azurenoops/azurenoopsutils"
       version = "~> 1.0.4"
