@@ -8,7 +8,6 @@ module "mod_diagnostic_settings" {
 
   # Resource Group, location, VNet and Subnet details
   location           = var.location
-  deploy_environment = var.deploy_environment
   environment        = var.environment
   org_name           = module.org_name.name
 
