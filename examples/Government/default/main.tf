@@ -7,9 +7,9 @@ module "mod_diagnostic_settings" {
   source = "../../.."
 
   # Resource Group, location, VNet and Subnet details
-  location           = var.location
-  environment        = var.environment
-  org_name           = module.org_name.name
+  location    = var.location
+  environment = var.environment
+  org_name    = module.org_name.name
 
   resource_id           = azurerm_key_vault.diagnostic-settings-kv.id
   logs_destinations_ids = [azurerm_log_analytics_workspace.diagnostic-settings-log.id]
